@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <%= simple_form_for [@restaurant, @review] do |r| %>
+      <%= r.input :rating %>
+      <%= r.input :content %>
+      <%= r.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
